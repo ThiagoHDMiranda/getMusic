@@ -31,8 +31,7 @@ body {
   height: 90vh;
   border-radius: 3vh;
   border-color: black 2px;
-  /* background: linear-gradient(blue, lightblue); */
-  background: blueviolet;
+  background: linear-gradient(blue, white);
 }
 
 #album-name {
@@ -72,12 +71,11 @@ button {
   background: inherit;
   border: none;
   color: white;
-  cursor: pointer;
   font-size: 3vh;
 }
 
-.bi-heart {
-  font-size: 3vh;
+.bi {
+  cursor: pointer;
 }
 
 #progress-container {
