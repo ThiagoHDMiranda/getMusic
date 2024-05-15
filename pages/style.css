@@ -164,6 +164,11 @@ button {
   font-size: 2vh;
 }
 
+div.done {
+  color: red;
+  font-size: 5vh;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -184,9 +189,11 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(172, 177, 243, 0.5);
+  background-color: rgba(225, 227, 248, 0.5);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  display: flex;
+  align-items: center;
 }
 
 .slider:before {
@@ -194,8 +201,7 @@ button {
   content: "";
   height: 2.8vh;
   width: 2.8vh;
-  left: 0.4vh;
-  bottom: 0.4vh;
+  left: 0.5vh;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -210,9 +216,13 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(2.6vh);
-  -ms-transform: translateX(2.6vh);
-  transform: translateX(2.6vh);
+  /* -webkit-transform: translateX(2.7vh);
+  -ms-transform: translateX(2.7vh); */
+  transform: translateX(2.5vh);
+}
+
+input:checked {
+  color: yellow;
 }
 
 .slider.round {
