@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="./pages/script.js" defer></script>
+    <title>getMusic</title>
+  </head>
+  <body>
+    <div id="transparent"></div>
+    <div class="music-container">
+      <h2 id="album-name">Nome do álbum</h2>
+      <img id="album-image" src="../images/getMusic.png" alt="album-image" />
+      <div id="below-image">
+        <div id="song-info">
+          <h2 id="song-name">Nome da música</h2>
+          <h5 id="artist-name">Nome do artista</h5>
+        </div>
+        <button id="btn-like"><i class="bi bi-heart"></i></button>
+      </div>
+      <div id="progress-container">
+        <div id="progress-bar">
+          <div id="current-progress">
+            <div id="circle"></div>
+          </div>
+        </div>
+        <div id="time-container">
+          <div id="current-time">00:00:00</div>
+          <div id="song-time">99:99:99</div>
+        </div>
+      </div>
+      <div id="button-container">
+        <button id="btn-shuffle"><i class="bi bi-shuffle"></i></button>
+        <button id="btn-previous">
+          <i class="bi bi-skip-backward-circle"></i>
+        </button>
+        <button id="btn-play"><i class="bi bi-play-circle"></i></button>
+        <button id="btn-next"><i class="bi bi-skip-forward-circle"></i></button>
+        <button id="btn-repeat"><i class="bi bi-repeat-1"></i></button>
+      </div>
+    </div>
+    <div id="toggle-button">
+      <div id="light-dark">Light/Dark</div>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </body>
+</html>
